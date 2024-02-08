@@ -1,2 +1,4 @@
-# proglanguagelog
-A log to add programming languages to a site and check them off once you completed the languages you'd like to learn.
+# Programming Language Log
+Learn how to program in various languages by keeping track of the languages you'd like to learn and then crossing off the ones you've completed.  You even can update and delete programming languages in the log that have typos (update) or you no longer wish to learn (delete).  The icon in each language added is as follows:  a pen/pad symbol for editing a log (for example, if you have a typo) and a trash can symbol for deleting a log (for example, if you no longer wish to learn the language you added to the log).
+
+After the user completes the learning of a language, he/she can cross it off the list by simply clicking the name of the language and it'll have a line drawn through it.  For example, if you have on the list PHP, JavaScript, and React as languages to learn and you have learned JavaScript and React, you can click the "JavaScript" and "React" text in their boxes and it'll cross them out.  You can also click them again to have it no longer crossed out if you wish to learn more or accidentally clicked it and didn't mean to.
