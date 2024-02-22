@@ -11,7 +11,7 @@ export const LanguagesForm = ({addLanguage}) => {
     return (
         <form className='LanguagesForm' onSubmit={handleSubmit}>
             <input type="text" className='languages-input' value={value} placeholder='What languages do you want to learn?'
-            onChange={(e) => setValue(e.target.value)} />
+           required onChange={(e) => setValue(e.target.value)} />
             <button type="submit" className='languages-btn'>Add Language</button>
         </form>
     )
