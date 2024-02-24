@@ -11,7 +11,8 @@ export const EditSubtaskForm = ({editSubtask, code}) => {
     return (
         <form className='SubtaskForm' onSubmit={handleSubmit}>
             <input type="text" id='subtasksTextbox' className='subtask-input' value={value} placeholder='Update Subtask'
-            required onChange={(e) => setValue(e.target.value)} />
+            required onInvalid={e => e.target.setCustomValidity('Please enter the updated subtask!')}
+            onInput={e => e.target.setCustomValidity('')} onChange={(e) => setValue(e.target.value)} />
             <button type="submit" className='languages-btn'>Update Subtask</button>
         </form>
     )
