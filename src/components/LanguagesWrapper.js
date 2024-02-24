@@ -12,7 +12,6 @@ export const LanguagesWrapper = () => {
     const [languages, setLanguages] = useState([]);
     const [subtasks, setSubtasks] = useState([]);
 
-
     const addLanguage = language => {
         setLanguages([...languages, {id: uuidv4(),
         code: language,

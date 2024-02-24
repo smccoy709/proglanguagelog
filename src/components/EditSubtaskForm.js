@@ -9,10 +9,10 @@ export const EditSubtaskForm = ({editSubtask, code}) => {
     }
 
     return (
-        <form className='LanguagesForm' onSubmit={handleSubmit}>
-            <input type="text" className='languages-input' value={value} placeholder='Update Programming Language'
-            onChange={(e) => setValue(e.target.value)} />
-            <button type="submit" className='languages-btn'>Update Language</button>
+        <form className='SubtaskForm' onSubmit={handleSubmit}>
+            <input type="text" id='subtasksTextbox' className='subtask-input' value={value} placeholder='Update Subtask'
+            required onChange={(e) => setValue(e.target.value)} />
+            <button type="submit" className='languages-btn'>Update Subtask</button>
         </form>
     )
 }

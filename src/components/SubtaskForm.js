@@ -8,18 +8,10 @@ export const SubtaskForm = ({addSubtasks}) => {
         setValue("");
     }
 
-    function required() {
-        document.getElementById("subtasksTextbox").style.borderColor = "red";
-    }
-
-    function notRequired() {
-        document.getElementById("subtasksTextbox").style.borderColor = "#8758ff";
-    }
-
     return (
         <form className='SubtaskForm' onSubmit={handleSubmit}>
         <input type="text" className='subtask-input' value={value} placeholder='What subtasks do you want to learn?'
-        id='subtasksTextbox' required onClick={required} onKeyDown={notRequired} onChange={(e) => setValue(e.target.value)} />
+        id='subtasksTextbox' required onChange={(e) => setValue(e.target.value)} />
         <button type="submit" className='languages-btn'>Add Subtask</button>
     </form>
     )
